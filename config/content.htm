@@ -13,7 +13,8 @@
 <p>個人網站:<a class="Link--inTextBlock" href="https://mdecp2024.github.io/hw-ZJJ41323248/">https://mdecp2024.github.io/hw-ZJJ41323248/</a></p>
 <p>其他資訊:</p>
 <p style="padding-left: 30px;"><a href="/downloads/cd2023_pj3ag4_zmq_football_4.7.7z">cd2023_pj3ag4_zmq_football_4.7.7z</a></p>
-<p style="padding-left: 30px;"><a href="https://localhost:9446/downloads/cd2024_2b_g6_steel_ball_platform_nxopen_copsim.7z">cd2024_2b_g6_steel_ball_platform_nxopen_copsim.7z</a></p><h1>Attendance</h1>
+<p style="padding-left: 30px;"><a href="https://localhost:9446/downloads/cd2024_2b_g6_steel_ball_platform_nxopen_copsim.7z">cd2024_2b_g6_steel_ball_platform_nxopen_copsim.7z</a></p>
+<h1>Attendance</h1>
 <p>出席 (10%) - 自行舉證評分</p>
 <p>自行利用 Github commits 提交記錄評分.</p>
 <h1>HW 1</h1>
@@ -56,7 +57,22 @@
 <h2>HW 3 Exam</h2>
 <p>每六人為一組進行協同程式練習</p>
 <p>透過 Jupyterlab 協同網頁, 輪流指定各組編寫 HW 3 相關的程式練習, 以及網頁內容 (localhost 與 Codespaces 環境)編輯.</p>
-<h1>HW 4</h1>
+<h3>W5</h3>
+<p></p>
+<h3>w8</h3>
+<p>操作步驟:</p>
+<ol>
+<li>下載 <a href="http://229.cycu.org/python_2025_lite.7z">python_2025_lite.7z</a> (可攜程式環境)</li>
+<li>下載<span> </span><a href="https://mde.tw/cp2024/downloads/zmq_remote_api_ex_cube_triangle.7z">zmq_remote_api_ex_cube_triangle.7z</a> (利用 Python 控制模擬場景中的物件)</li>
+<li>進入可攜程式環境中 data/CoppeliaSim 目錄, 開啟 coppeliaSim.exe (機電整合模擬程式,<span> </span><a href="https://github.com/CoppeliaRobotics">原始碼</a>)</li>
+<li>啟動可攜程式環境, 雙點擊 start_ipv6.bat, 系統會啟動四個命令列, 兩個 SciTE 編輯器</li>
+<li>執行場景控制程式前, 先處理操作系統的防火牆, 將下列指令存為 .bat 檔案後, 以管理員身分執行, 以便開啟 23000-23050 埠號進出:</li>
+<li>netsh advfirewall firewall add rule name="allow_23000-23050" dir=in action=allow protocol=TCP localport=23000-23050<br/>netsh advfirewall firewall add rule name="allow_23000-23050" dir=out action=allow protocol=TCP localport=23000-23050</li>
+<li>開啟 CoppeliaSim 中的視覺串流伺服器: Modules - Connectivity - Visualization stream</li>
+<li>利用 SciTE 開啟 put_cubes_into_scene_1.py, 利用 Tools - Go 執行操控程式</li>
+<li>使用者可以透過瀏覽器, 以模擬場景所在電腦的 IP, 且埠號為 23020 觀看模擬場景<img alt="" height="147" src="/images/螢幕擷取畫面 2024-10-16 123255.png" width="261"/></li>
+<li>120.113.99.48:23020</li>
+</ol><h1>HW 4</h1>
 <h4>主題: 利用 Python 控制機電模擬系統 (20%)</h4>
 <p style="padding-left: 30px;">利用 <a href="https://solvespace.com/">https://solvespace.com/</a> 建立機械系統零組件</p>
 <p style="padding-left: 30px;">利用 <a href="https://www.coppeliarobotics.com/">CoppeliaSim</a> 建立機電模擬系統</p>
