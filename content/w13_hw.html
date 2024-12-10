@@ -142,7 +142,24 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w13_ai << <a href='w13_ai.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2<br /><h1>w13_hw</h1>
-<br />w13_ai << <a href='w13_ai.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2</div>
+<p>解題思考: 透過點座標的掃瞄, 先採用尺寸較大格點 (如每 10 pixel 掃描一點), 即可判定點群位於那一個特定區域並<a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/3148911ad594ac9e5a370cdd06227e972176779c/inside_circle1_brython.py">進行著色</a>. 當掃描細至單一 pixel 時, 就可以完成<a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/fae5dd0145a7d14926dc7c9807ba2535d4b993c0/inside_circle1_1pixel_brython.py">區域著色</a>.</p>
+<p>另外, 透過 if 判定各點所在區域的條件組合, 可以就是否:</p>
+<p>位於第一個圓內部</p>
+<p>位於第二個圓內部</p>
+<p>位於第一個正方形內部</p>
+<p>位於第二個正方形內部</p>
+<p>位於第一個正方形上方、下方、左方、右方</p>
+<p>位於第二個正方形上方、下方、左方、右方</p>
+<p>位於對角線上方範圍</p>
+<p>位於對角線下方範圍</p>
+<p>等條件<a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/c885949528f12bfa567ebbd2474d13ef4b5c1e46/if_append_brython.py">區分各區域的不同屬性</a>, 並設法利用這些區域屬性進行<a href="https://stackoverflow.com/questions/50528954/give-each-shape-on-html5-canvas-a-random-colour">顏色運算</a>.</p>
+<p><a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/676c6f27ab33fd18873284c51b4c2c008d312c01/almost_right_brython.py">接近正確</a>以及<a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/cb369d190d0e69a48e4d44dea5fcab660f4c0f18/almost_right2_brython.py">更細化</a>的著色範例.</p>
+<p><a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/25a616bb5e60e5ca9003d954bb10772d0ab86ae8/rect_fill_color_1_brython.py">rect_fill_1</a></p>
+<p><a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/25a616bb5e60e5ca9003d954bb10772d0ab86ae8/rect_fill_color_2_brython.py">rect_fill_2</a></p>
+<p><a href="https://mdecp2024.github.io/hw-ZJJ41323248/content/Brython.html?src=https://gist.githubusercontent.com/ZJJ41323248/8fdd3e083c883c2c03fed948e19b50de/raw/2bdcac06c2201514ff42cbcd5d433053d2a81be3/w13_hw%2520color.py">區塊著色</a></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GLDEu_MV1u8?si=2eUxoCOAI7Iqdnd8" title="YouTube video player" width="560"></iframe></p>
+<p>心得:</p>
+<p>這一題我只看得懂一點點(其實也等於看不懂)，所以我就把老師給的程式去做更改，請ChatGPT幫我把每個區塊的顏色改掉，等上課再去問問看別人是怎麼做出來的，說不定老師上課也會教，也比較容易學。</p><br />w13_ai << <a href='w13_ai.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2</div>
         
     <!-- footer -->
       <div class="container">
